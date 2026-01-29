@@ -1,0 +1,19 @@
+# Dependences
+node_modules/
+dist/
+
+# Secrets
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# SonarQube/Trivy files
+.scannerwork/
+trivy-results.txt
