@@ -1,0 +1,12 @@
+{
+  "name": "golden-pipeline-app",
+  "version": "1.0.0",
+  "description": "Projekt edukacyjny Golden Pipeline",
+  "main": "app.js",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
