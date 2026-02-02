@@ -20,7 +20,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --severity-threshold=hig
+          args: --severity-threshold=high
 
       - name: Build Docker Image
         run: docker build -t my-app:${{ github.sha }} .
