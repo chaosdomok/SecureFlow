@@ -1,6 +1,7 @@
 FROM node:20-alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
+# W Alpine używamy 'apk' zamiast 'apt-get'
+RUN apk add --no-cache curl
 
 WORKDIR /app
 
