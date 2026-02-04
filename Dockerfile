@@ -1,13 +1,12 @@
 FROM node:20-alpine
 
-# W Alpine używamy 'apk' zamiast 'apt-get'
+RUN npm install -g npm@latest
+
 RUN apk add --no-cache curl
 
 WORKDIR /app
-
 COPY package*.json ./
-RUN npm install --only=production
-
+RUN npm ci --only=production
 COPY . .
 
 USER node
